@@ -21,8 +21,8 @@ names(annualEmissionTotalsDf) <- c("Year","TotalEmissions")
 #  Bar charts are chosen because data is discreet, by year
 barplot(annualEmissionTotalsDf$TotalEmissions,
         names.arg = annualEmissionTotalsDf$Year,
-        main = "PM2.5 Emission Totals by Year",
-        ylab = "PM2.5 Emissions (Millions of Tons)",
+        main = "United States PM2.5 Emission Totals by Year",
+        ylab = "Emissions (Millions of Tons)",
         xlab = "Year",
         col = "red")
 png("./plot1.png")
