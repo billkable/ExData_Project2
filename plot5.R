@@ -9,6 +9,20 @@ library(ggplot2)
 ## Definition of Motor Vehicle interpreted as:
 ##  "A road vehicle powered by an internal combustion engine"
 ##
+## Given the reader may interpret by automotive (light) or
+## Heavy Duty Gasoline or Diesel vehicles, more assesssment
+## done to determine additional references.
+## 
+## From analysis of reference data Source_Classification_Code:
+## 1.  It is assumed Data.Category of "Onroad" sufficiently
+##     categorizes motor vehicles for this study.
+## 2.  There are effective sub categories of Onroad that
+##      apply to Onroad sources:
+##      - Gasoline Light Duty Vehicles
+##      - Gasoline Heavy Duty Vehicles
+##      - Diesel Light Duty Vehicles
+##      - Diesel Heavy Duty Vehicles
+##
 ## From analysis of reference data Source_Classification_Code
 ## it is assumed Data.Category of "Onroad" sufficiently
 ## categorizes motor vehicles for this study
