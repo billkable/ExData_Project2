@@ -35,7 +35,7 @@ baltimoreAnnualEmissionTotalsByTypeYearDf <- arrange(baltimoreAnnualEmissionTota
 p <- ggplot(data=baltimoreAnnualEmissionTotalsByTypeYearDf,
        aes(x=Year,y=TotalEmissions,fill=Type)) +
         geom_bar(colour="black", stat="identity") +
-        facet_grid(. ~ Type) + 
+        facet_wrap(~ Type, ncol=2) + 
         ggtitle("Annual Baltimore Emission Totals by Type") +
         ylab("Emissions (Tons)")
 
