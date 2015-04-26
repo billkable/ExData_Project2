@@ -25,6 +25,7 @@ coalIndexL <- grepl("Coal",sccRefDf$EI.Sector) &
                 grepl("Combustion",sccRefDf$SCC.Level.One)
 
 coalSccRefDf <- subset(sccRefDf, coalIndexL)
+coalSccRefDf$SCC <- factor(coalSccRefDf$SCC)
 
 coalEmissionsDf <- inner_join(select(coalSccRefDf,SCC),
                        select(emissionsDf,SCC,year,type,Emissions),
